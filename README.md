@@ -4,4 +4,4 @@ Run the main.py file after instaling python packages:-
  * keyboard
  * time
  * threading\
-using commang " pip install <package name> "
+using commang " pip install < package name > "
