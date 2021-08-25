@@ -137,4 +137,5 @@ vibeVol.pack()
 
 w.iconbitmap("icon.ico")
 w.minsize(400,250)
+w.resizable(False,False)
 w.mainloop()
