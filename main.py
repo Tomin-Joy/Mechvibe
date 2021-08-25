@@ -14,7 +14,6 @@ music_vol_value.set(1.0)
 vibe_vol_value.set(1.0)
 iplay = PhotoImage(file="play.png")
 ipause = PhotoImage(file="pause.png")
-#mixer.Channel(1).play(mixer.Sound("C:\\Users\\tomin\\Desktop\\chirakukal.mp3"))
 
 def vibe_vol_change(e):
     mixer.Channel(0).set_volume(vibe_vol_value.get())
