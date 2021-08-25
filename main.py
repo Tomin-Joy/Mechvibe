@@ -6,7 +6,7 @@ mixer.init()
 tune = mixer.Sound("sound1.mp3")
 vol = 1.0
 w = Tk()
-w.title("Mechvibe v-0.1.2")
+w.title("Mechvibe v-1.1.2")
 track = 0
 vibe_vol_value = DoubleVar()
 music_vol_value = DoubleVar()
