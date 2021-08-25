@@ -42,7 +42,7 @@ def track_select():
     play_.pack_forget()
     pause_.pack()
     track = mixer.Sound(filedialog.askopenfile(title="select the tune",filetypes=(("mp3 files(bgms recommended)","*.mp3"),)))
-    mixer.Channel(1).play(track)   
+    mixer.Channel(1).play(track,-1)  
 
 def music_play():
     global track
