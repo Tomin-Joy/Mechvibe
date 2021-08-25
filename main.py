@@ -20,7 +20,7 @@ def vibe_vol_change(e):
     mixer.Channel(0).set_volume(vibe_vol_value.get())
 
 def music_vol_change(e):
-    mixer.Channel(1).set_volume(music_vol_value*0.3)
+    mixer.Channel(1).set_volume(music_vol_value.get()*0.3)
 
 def tune_():
     global tune
