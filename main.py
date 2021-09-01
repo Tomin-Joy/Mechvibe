@@ -1,4 +1,5 @@
 from tkinter import  Tk,Button,Label,Frame,filedialog,ttk,DoubleVar,PhotoImage,RIGHT,LEFT
+from keyboard import on_release,wait
 from pygame import mixer
 from threading import Thread
 
@@ -25,7 +26,7 @@ def tune_():
     global tune
     def note(a):
         mixer.Channel(0).play(tune)
-    from keyboard import on_release,wait
+    
     on_release(callback = note)
     wait()
     
