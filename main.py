@@ -110,7 +110,7 @@ stop = Button(w,text="STOP",bg="red",font=" impact 20 bold",bd=4,command= lambda
 #Slider
 vibeVol = ttk.Scale(f3,from_=1,to=0,orient='vertical',command=vibe_vol_change,variable=vibe_vol_value)
 musicVol = ttk.Scale(f6,from_=1,to=0,orient='vertical',command=music_vol_change,variable=music_vol_value)
-#layout
+#layout 
 l1.grid(row=0,column=1)
 l2.pack()
 l3.pack(pady=3)
