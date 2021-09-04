@@ -91,7 +91,7 @@ f5 = Frame(w)
 f6 = Frame(f5)
 f7 = Frame(f5)
 #Labels
-l1 = Label(w,text="Select the tune",font="impact 36 bold")
+l1 = Label(w,text="Feel the vibe",font="impact 36 bold")
 l2 = Label(f0,text="Vibe")
 l3 = Label(f3,text="Vol",width=5)
 l4 = Label(f7,text="Music")
