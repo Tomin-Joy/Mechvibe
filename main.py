@@ -2,6 +2,7 @@ from tkinter import  Tk,Button,Label,Frame,filedialog,ttk,DoubleVar,PhotoImage,R
 from keyboard import on_release,wait
 from pygame import mixer
 from threading import Thread
+from platform import system
 
 mixer.init()
 tune = mixer.Sound("sound1.mp3")
@@ -80,6 +81,8 @@ def custom():
     global tune
     tune = mixer.Sound(filedialog.askopenfile(title="select the tune",filetypes=(("mp3 files(1 sec recommended)","*.mp3"),)))
 
+font1 = "impact 36 bold"
+font2 = "none 36 bold"
 
 #Frames
 f4 = Frame(w)
@@ -91,7 +94,7 @@ f5 = Frame(w)
 f6 = Frame(f5)
 f7 = Frame(f5)
 #Labels
-l1 = Label(w,text="Feel the vibe",font="impact 36 bold")
+l1 = Label(w,text="Feel the vibe",font=font1 if system()=="Windows" else font2)
 l2 = Label(f0,text="Vibe")
 l3 = Label(f3,text="Vol",width=5)
 l4 = Label(f7,text="Music")
@@ -105,8 +108,9 @@ b5 = Button(f0,text="add tune",command= custom,bd=4)
 b6 = Button(f7,text="browse",command=track_select,bd=4)
 play_ =Button(f7,image=iplay,borderwidth=0,command=music_play)
 pause_=Button(f7,image=ipause,borderwidth=0,command=music_pause)
-start =Button(w,text="START.",font=" impact 20 bold",bg="pale green",command= strt,bd=4)
-stop = Button(w,text="STOP",bg="red",font=" impact 20 bold",bd=4,command= lambda : w.destroy())
+start =Button(w,text="START",font= font1 if system()=="Windows" else font2,bg="green",fg="white",command= strt,bd=4)
+print(system()=="Linux")
+stop = Button(w,text="STOP",bg="red",font=font1 if system()=="Windows" else font2,bd=4,command= lambda : w.destroy())
 #Slider
 vibeVol = ttk.Scale(f3,from_=1,to=0,orient='vertical',command=vibe_vol_change,variable=vibe_vol_value)
 musicVol = ttk.Scale(f6,from_=1,to=0,orient='vertical',command=music_vol_change,variable=music_vol_value)
@@ -135,7 +139,7 @@ play_.pack()
 start.grid(row=1,column=1)
 vibeVol.pack()
 
-w.iconbitmap("icon.ico")
+#w.iconbitmap("icon.ico")
 w.minsize(400,250)
 w.resizable(False,False)
 w.mainloop()

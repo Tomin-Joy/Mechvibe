@@ -12,9 +12,17 @@
 
 <H1>Usage Instructions</H1>
 
-* Step 1: Select the tune from the give 4 or add one as your wish 
-* Step 2: Click on the start button to start realtime keystrokes
-    * Adjust the volume using the volume slider on the left.
+* In Linux
+    * Run command - ```sudo python main.py```
+<br><br>
+* In Windows
+
+    * Step 1: Select the tune from the give 4 or add one as your wish 
+    * Step 2: Click on the start button to start realtime keystrokes
+        * Adjust the volume using the volume slider on the left.
+ 
+
+
 
 <H1>BGM player </H1>
 
