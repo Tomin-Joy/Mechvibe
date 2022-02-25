@@ -8,7 +8,7 @@
     * threading.
 
 
-   Using commang " pip install < package name > "
+   Using command " pip install < package name > "
 
 <H1>Usage Instructions</H1>
 
